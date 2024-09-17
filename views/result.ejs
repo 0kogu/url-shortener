@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortened</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Shortened URL</h1>
+        <p>Original URL: <a href="<%= longUrl %>"><%= longUrl %></a></p>
+        <p>Short URL: <a href="/<%= shortUrl %>">http://localhost:3000/<%= shortUrl %></a></p>
+        <p><strong>Note:</strong> Every time someone visits the short URL, the number of uses will be tracked.</p>
+        <a href="/">Shorten another URL</a>
+    </div>
+</body>
+</html>
